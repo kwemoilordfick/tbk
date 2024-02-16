@@ -123,10 +123,9 @@
                 </div>
             </header>
             <!--Header Wrap End-->
-            <!--Banner Wrap Start-->
             <div class="iq_banner">
                 <ul class="slider">
-                    <li class="">
+                    <li>
                         <!--Banner Thumb START-->
                         <a href="#" data-rel="prettyphoto[]" target="_blank">
                             <img src="extra-images/banner-01.jpg" alt="Image here">
@@ -143,11 +142,12 @@
                         </a>
                         <!--Banner Thumb End-->
                     </li>
-                    <li class="">
+                    <!-- Add more slides here -->
+                    <li>
                         <!--Banner Thumb START-->
                         <a href="#" data-rel="prettyphoto[]" target="_blank">
                             <img src="extra-images/banner-02.jpg" alt="Image here">
-                            <div class="iq-caption-wrapper text-center">
+                            <div class="iq-caption-wrapper text-left">
                                 <div class="iq_banner_caption container">
                                     <div class="iq-caption">
                                         <div class="iq-caption-title">The Best Learning Institution</div>
@@ -160,11 +160,12 @@
                         </a>
                         <!--Banner Thumb End-->
                     </li>
-                    <li class="">
+                    <!-- Add more slides here -->
+                    <li>
                         <!--Banner Thumb START-->
                         <a href="#" data-rel="prettyphoto[]" target="_blank">
                             <img src="extra-images/banner-03.jpg" alt="Image here">
-                            <div class="iq-caption-wrapper text-right">
+                            <div class="iq-caption-wrapper text-left">
                                 <div class="iq_banner_caption container">
                                     <div class="iq-caption">
                                         <div class="iq-caption-title">The Best Learning Institution</div>
@@ -177,9 +178,10 @@
                         </a>
                         <!--Banner Thumb End-->
                     </li>
+                    <!-- Add more slides here -->
                 </ul>
             </div>
-            <!--Banner Wrap End-->
+                        <!--Banner Wrap End-->
             <!--Iqoniq Content Start-->
             <div class="iq_content_wrap">
             	<!--We Are Professional Wrap Start-->
@@ -1207,5 +1209,29 @@
         <!--Custom JavaScript-->
         <script src="js/custom.js"></script>
     </body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.slider').slick({
+            autoplay: true, // Autoplay slides
+            autoplaySpeed: 3000, // Autoplay speed in milliseconds
+            dots: true, // Show dots navigation
+            arrows: true, // Show arrows navigation
+            prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+            nextArrow: '<button type="button" class="slick-next">Next</button>',
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false, // Hide arrows on smaller screens
+                    }
+                }
+            ]
+        });
+    });
+</script>
+
 
 </html>
